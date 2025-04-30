@@ -1,0 +1,122 @@
+body{
+    background-color: #D4F4DD;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    height: 120px;
+    width: 100%;
+    background-color: #d4c6f7;
+   display: flex; /*torna os elementos flexiveis para mover*/
+   align-items: center; /*alinha os elementes na vertical- no centro*/
+   justify-content: space-between;/*alinhamento horizontal - espaço entre os elementos*/
+
+    color: #FFFFFF;
+}
+
+.logo img{
+    height: 120px;
+    margin-left: 15px;
+}
+ 
+
+nav a{
+    color: #1A1A1A;
+    text-decoration: none;/*tira o sublinhado do link*/
+    padding: 15px;  /*espaço entre a borda do elemento e o conteudo (espaço de dentro)*/
+    font-size: 20px;
+}
+
+.destaque{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+
+.destaque_imagem img{
+    height: 400px;
+
+
+}
+ 
+.destaque_texto h1{
+font-size: 80px;
+margin: 0;
+
+}
+
+.destaque_texto p{
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+    
+}
+
+.destaque_texto button{
+    background-color:#372073 ;
+    color: #FFFFFF;
+    height: 50px;
+    width: 200px;
+    border-radius: 16px;
+
+}
+
+.servico{
+    background-color: #c9fad7;
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    padding-left: 15px;
+
+}
+
+.sobre{
+    width: 100%;
+
+
+}
+
+.cards{
+    display: flex;
+}
+
+.card{
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    width: 400px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.topo_card{
+    display: flex;
+    align-items: center;
+    border-radius: 16px 16px 0px 0px;
+    background-color: #372073;
+    color: #FFFFFF;
+}
+
+.topo_card img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+.card p{
+    margin: 0;
+    padding: 15px;
+}
+
+.cards_servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
