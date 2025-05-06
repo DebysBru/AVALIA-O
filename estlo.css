@@ -1,27 +1,31 @@
 body{
-    background-color: #D4F4DD;
+    background-color: #f6fefe;
     margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header{
     height: 120px;
     width: 100%;
-    background-color: #d4c6f7;
+    background-color: #372073;
    display: flex; /*torna os elementos flexiveis para mover*/
    align-items: center; /*alinha os elementes na vertical- no centro*/
    justify-content: space-between;/*alinhamento horizontal - espaço entre os elementos*/
-
+   position: sticky;/*fixa o cabeçaçho no topo */
+   z-index: 1000;/*Deixa o cabeçalho por cima dos outros elementos */
     color: #FFFFFF;
+    top: 0;/* Define a posição do topo 0 - fica grudado no topo da tela */
 }
 
 .logo img{
-    height: 120px;
+    height: 200px;
     margin-left: 15px;
+    margin-top: 20px;
 }
  
 
 nav a{
-    color: #1A1A1A;
+    color: #d5caf2;
     text-decoration: none;/*tira o sublinhado do link*/
     padding: 15px;  /*espaço entre a borda do elemento e o conteudo (espaço de dentro)*/
     font-size: 20px;
@@ -34,6 +38,11 @@ nav a{
     padding-left: 20px;
     padding-right: 20px;
 
+}
+
+.destaque_imagem{
+    display: flex;
+    align-items: flex-end;
 }
 
 
@@ -62,11 +71,16 @@ margin: 0;
     height: 50px;
     width: 200px;
     border-radius: 16px;
+    font-weight: bold;/*deixa o texto do botão em negrito*/
+    border: none;
+    text-decoration: none;
+    
+
 
 }
 
 .servico{
-    background-color: #c9fad7;
+    background-color: #facfd8;
     display: flex;
     align-items:flex-start;
     justify-content:center;
@@ -108,7 +122,14 @@ margin: 0;
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 15px;
+
 }
+
+.topo_card {
+    display: flex;
+    justify-content: center;
+}
+
 
 .card p{
     margin: 0;
@@ -118,5 +139,25 @@ margin: 0;
 .cards_servicos{
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+
+
+footer{
+    background-color: #372073;
+    display: flex;
+    justify-content: space-between;
+    color: #d5caf2;
+    padding: 15px;
+
+}
+.rodape_imagem img{
+    width: 50px;
+    padding: 10;
+}
+
+.rodape_texto{
+    display: flex;
     align-items: center;
 }
